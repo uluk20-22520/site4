@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — УЛУК ИНТЕРНЕШЕНЛ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <strong id="company-name">УЛУК ИНТЕРНЕШЕНЛ</strong>
+        <span>IT-решения для офиса, магазина и бизнеса</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="cases.html">Кейсы</a>
+        <a href="about.html" class="active">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="panel glow-border about-hero-panel">
+          <span class="tag">О компании</span>
+          <h1 id="about-headline">Надёжный IT-партнёр для малого и среднего бизнеса</h1>
+          <p id="about-text" class="about-lead">Мы берём на себя ежедневные технические задачи бизнеса: от закупки оборудования и настройки рабочих мест до внедрения видеонаблюдения, сетевой инфраструктуры и базовой информационной безопасности.</p>
+          <div class="about-story">
+            <p>Мы работаем с офисами, магазинами, складами и небольшими компаниями, которым нужен понятный и практичный IT-подрядчик. Помогаем не только установить технику, но и выстроить удобную ежедневную работу: связь, печать, сеть, рабочие места, лицензии и поддержку.</p>
+            <p>Наша задача — сделать так, чтобы техника не мешала работе бизнеса, а помогала ему: быстро запускалась, стабильно работала и была удобной для сотрудников и руководителя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-layout">
+        <div class="panel glow-border about-copy">
+          <h2>Почему выбирают нас</h2>
+          <ul class="process-list about-list-large">
+            <li>Комплексный подход к IT-задачам бизнеса</li>
+            <li>Подбор оборудования и программного обеспечения</li>
+            <li>Монтаж, настройка и сопровождение</li>
+            <li>Прозрачная коммуникация и понятные сроки</li>
+            <li>Поддержка после запуска и внедрения</li>
+          </ul>
+        </div>
+        <div class="panel glow-border about-side">
+          <h2>Для кого наши услуги</h2>
+          <div class="info-list">
+            <div class="info-item"><strong>Офисы</strong>Настройка рабочих мест, принтеров, интернета, лицензий и технической поддержки.</div>
+            <div class="info-item"><strong>Магазины и точки продаж</strong>Подключение кассовой техники, POS-оборудования, камер и сети.</div>
+            <div class="info-item"><strong>Склады и объекты</strong>Видеонаблюдение, удалённый доступ, сеть, мониторинг и инфраструктура.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel glow-border cta-banner">
+          <div>
+            <span class="tag success">Связаться с нами</span>
+            <h2>Готовы обсудить ваш проект</h2>
+            <p>Расскажите о задаче, и мы предложим решение под ваш офис, магазин, склад или рабочие места.</p>
+          </div>
+          <a href="contact.html" class="btn-primary">Подать заявку</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="panel glow-border footer-inner">
+        <div class="footer-col">
+          <h3 id="company-name-footer">УЛУК ИНТЕРНЕШЕНЛ</h3>
+          <p>Настройка оргтехники, камеры, сети, закупка техники и лицензий для бизнеса.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="cases.html">Кейсы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a id="footer-phone-link" href="tel:+996706916367"><span id="footer-phone-text">+996 706 916 367</span></a></li>
+            <li><a id="footer-email-link" href="mailto:info@ulukit.kg"><span id="footer-email-text">info@ulukit.kg</span></a></li>
+            <li><span id="footer-city">г. Бишкек</span></li>
+            <li><span id="footer-address">Кыргызстан, Бишкек</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 УЛУК ИНТЕРНЕШЕНЛ. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="cloud-config.js"></script>
+  <script src="cloud.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

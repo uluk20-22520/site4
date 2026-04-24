@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс — УЛУК ИНТЕРНЕШЕНЛ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <strong id="company-name">УЛУК ИНТЕРНЕШЕНЛ</strong>
+        <span>IT-решения для офиса, магазина и бизнеса</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="cases.html" class="active">Кейсы</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero detail-hero">
+      <div class="container detail-hero-grid">
+        <div class="panel glow-border detail-copy">
+          <div class="detail-top">
+            <div class="case-icon detail-icon" id="detailCaseIcon">📁</div>
+            <div>
+              <span class="tag" id="detailCaseIndustry">Кейс</span>
+              <h1 id="detailCaseTitle">Подробное описание кейса</h1>
+            </div>
+          </div>
+          <p class="detail-lead" id="detailCaseLead">Подробная информация о кейсе загружается.</p>
+          <div class="hero-actions">
+            <a href="#caseLeadForm" class="btn-primary">Подать заявку</a>
+            <a href="cases.html" class="btn-secondary">Назад к кейсам</a>
+          </div>
+        </div>
+        <div class="panel glow-border detail-side">
+          <h2>Ключевые результаты</h2>
+          <ul class="features-list features-list-large" id="detailCaseMetrics"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-grid">
+        <div class="panel glow-border detail-block">
+          <h2>Задача проекта</h2>
+          <p class="detail-paragraph" id="detailCaseTask"></p>
+        </div>
+        <div class="panel glow-border detail-block">
+          <h2>Что было сделано</h2>
+          <div class="detail-steps" id="detailCaseSteps"></div>
+        </div>
+        <div class="panel glow-border detail-block detail-grid-span">
+          <h2>Результат</h2>
+          <p class="detail-paragraph" id="detailCaseResult"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel glow-border contact-form-panel detail-form-panel">
+          <div class="section-head">
+            <div>
+              <span class="tag success">Похожий проект</span>
+              <h2>Подать заявку</h2>
+            </div>
+            <p>Если вам нужен похожий результат, оставьте контакты, и мы предложим решение под ваш объект или бизнес.</p>
+          </div>
+          <form id="caseLeadForm" class="contact-form js-lead-form">
+            <input type="hidden" name="page" value="Страница кейса">
+            <input type="hidden" name="service" id="detailCaseHidden" value="">
+            <div class="form-grid-2">
+              <div class="form-field"><label for="case_name">Имя *</label><input class="input" id="case_name" type="text" name="name" required></div>
+              <div class="form-field"><label for="case_phone">Телефон *</label><input class="input" id="case_phone" type="tel" name="phone" required></div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-field"><label for="case_company">Компания</label><input class="input" id="case_company" type="text" name="company"></div>
+              <div class="form-field"><label for="case_project_name">Проект</label><input class="input" id="case_project_name" type="text" value="" readonly></div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-field"><label for="case_channel">Канал связи</label><select class="input" id="case_channel" name="channel"><option value="Телефон">Телефон</option><option value="WhatsApp">WhatsApp</option><option value="Telegram">Telegram</option><option value="Email">Email</option></select></div>
+              <div class="form-field"><label for="case_comment">Комментарий</label><input class="input" id="case_comment" type="text" name="comment" placeholder="Например: нужен похожий проект для офиса / магазина / склада"></div>
+            </div>
+            <div class="form-footer"><button type="submit" class="btn-primary">Отправить заявку</button><span class="form-hint">Мы свяжемся с вами и обсудим похожий проект.</span></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="panel glow-border footer-inner">
+        <div class="footer-col">
+          <h3 id="company-name-footer">УЛУК ИНТЕРНЕШЕНЛ</h3>
+          <p>Настройка оргтехники, камеры, сети, закупка техники и лицензий для бизнеса.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="cases.html">Кейсы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a id="footer-phone-link" href="tel:+996706916367"><span id="footer-phone-text">+996 706 916 367</span></a></li>
+            <li><a id="footer-email-link" href="mailto:info@ulukit.kg"><span id="footer-email-text">info@ulukit.kg</span></a></li>
+            <li><span id="footer-city">г. Бишкек</span></li>
+            <li><span id="footer-address">Кыргызстан, Бишкек</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 УЛУК ИНТЕРНЕШЕНЛ. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="cloud-config.js"></script>
+  <script src="cloud.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
